@@ -1,3 +1,5 @@
+
+
 :root {
     --color-main-text: #212121;
     --color-secondary-text: #757575;
@@ -13,7 +15,23 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-secondary-text);
-    background-color: var(--background-main);
+    background-color: var(--background-main);  
+}
+
+.header {
+    height: 80px;
+    margin-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.conteiner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid rgb(255, 0, 0);
 }
 
 li {
@@ -32,6 +50,7 @@ a {
     text-decoration: none;
 
     color: var(--color-main-text);
+
 }
 
 .logo span {
@@ -40,10 +59,12 @@ a {
 
 
 .navigation {
+    display: flex;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 
 .navigation a {
     color: var(--color-main-text);
@@ -53,11 +74,16 @@ a {
     color: var(--color-hover);
 }
 
+.navigation a:focus {
+    color: var(--color-hover);
+}
+
 .current a{
     color: var(--color-hover);
 }
 
 .contact {
+    display: flex;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -72,8 +98,15 @@ a {
     color: var(--color-hover);
 }
 
+.contact a:focus {
+    color: var(--color-hover);
+}
+
+
+
 .banner {
     background-color: var(--background-footer);
+    padding: 200px 452px 280px 452px;
 }
 
 h1 {
@@ -98,6 +131,10 @@ h1 {
     background-color: var(--color-hover);
 }
 
+.peculiarities {
+    padding: 94px 215px 47px;
+}
+
 .peculiarities h3 {
     font-weight: 700;
     font-size: 14px;
@@ -108,6 +145,10 @@ h1 {
 
 .peculiarities p {
     color: var(--color-secondary-text);
+}
+
+.about .team {
+    padding: 47px 215px;
 }
 
 .team {
@@ -144,6 +185,7 @@ h1 {
 
 footer {
     background-color: var(--background-footer);
+    padding: 60px 215px;
 }
 
 .logo-footer {
