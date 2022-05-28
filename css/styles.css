@@ -212,6 +212,9 @@ footer {
     color: var(--color-secondary-text)
 }
 
+.portfolio {
+    padding: 94px 215px;
+}
 .filter {
     font-weight: 500;
     font-size: 16px;
