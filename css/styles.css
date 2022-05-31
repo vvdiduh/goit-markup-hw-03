@@ -17,11 +17,32 @@ body {
     background-color: var(--background-main);  
 }
 
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: au;
+}
+
 .header {
-    margin-bottom: 0;
-    padding-top: 32px 215px;
     border-bottom: 1px solid;
     border-bottom-color: var(--border-line);
+    height: 80px;
 }
 
 .header .conteiner {
@@ -34,17 +55,10 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 1px solid rgb(255, 0, 0); */
+    outline: 1px solid rgb(255, 0, 0);
 }
 
-li {
-    list-style-type: none;
-}
 
-a {
-    text-decoration: none;
-    font-style: normal;
-}
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -55,7 +69,8 @@ a {
     color: var(--color-main-text);
 
     margin-right: 93px;
-
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo span {
@@ -73,6 +88,8 @@ a {
 
 .navigation a {
     color: var(--color-main-text);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .navigation a:hover {
@@ -102,6 +119,8 @@ a {
 
 .contact a {
     color: var(--color-secondary-text);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contact a:hover {
@@ -118,13 +137,10 @@ a {
 
 .banner {
     background-color: var(--background-footer);
-    padding: 200px 452px;
+    padding: 200px 0;
+    text-align: center;
 }
 
-.banner .conteiner {
-    align-items: center;
-    flex-direction: column;
-}
 
 h1 {
     font-weight: 900;
@@ -134,8 +150,8 @@ h1 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--background-main);
-    height: 120px;
     width: 696px;
+    margin: 0 auto;
 }
 
 
@@ -147,20 +163,16 @@ h1 {
     letter-spacing: 0.06em;
     color: var(--background-main);
     cursor: pointer;
-
+    margin-top: 30px;
     background-color: var(--color-hover);
-
+    border: none;
     height: 50px;
     width: 200px;
     border-radius: 4px;
 }
 
-.peculiarities {
-    padding: 94px 215px 47px;
-}
-
-.peculiarities .conteiner {
-    padding-left: 0;
+.section {
+    padding: 94px 0;
 }
 
 .peculiarities ul {
@@ -183,6 +195,7 @@ h1 {
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--color-main-text);
+    margin-bottom: 10px;
 }
 
 .peculiarities p {
@@ -232,14 +245,18 @@ h1 {
     line-height: 1.16;
     text-align: center;
     color: var(--color-main-text);
+    margin-bottom: 50px;
 }
-
+.team img{
+    margin-bottom: 30px;
+}
 .team h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     color: var(--color-main-text);
+    margin-bottom: 10px;
 }
 
 .team p {
@@ -247,10 +264,11 @@ h1 {
     line-height: 1.18;
     text-align: center;
     color: var(--color-secondary-text);
+    margin-bottom: 30px;
 }
 
 .portfolio {
-    padding: 94px 215px;
+    padding: 94px 0;
 }
 
 .portfolio .conteiner {
@@ -293,8 +311,8 @@ h1 {
     flex-wrap: wrap;
     margin-left: -30px;
 }
-/* 
-.examples-works li:nth-child(3n+1){
+
+/* .examples-works li:nth-child(3n+1){
     margin-right: 30px;
 }
 
@@ -308,17 +326,13 @@ h1 {
     margin-bottom: 30px;
 }
 
-.examples-works img {
-    display: block;
-}
-
 .examples-works h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--color-main-text);
-    
+    margin-bottom: 4px;    
 }
 
 .examples-works p {
@@ -339,7 +353,11 @@ h1 {
 
 footer {
     background-color: var(--background-footer);
-    padding: 60px 215px;
+    padding: 60px 0;
+}
+
+footer .conteiner {
+    flex-direction: column;
 }
 
 .logo-footer {
@@ -349,6 +367,7 @@ footer {
     line-height: 1.19;
     text-decoration: none;
     color: var(--color-hover);
+    margin-bottom: 20px;
 }
 
 .logo-footer span {
@@ -364,4 +383,8 @@ footer {
 .adress-contact {
     line-height: 1.71;
     color: var(--color-secondary-text)
+}
+
+address :not(:last-child){
+    margin-bottom: 9px;
 }
