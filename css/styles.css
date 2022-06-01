@@ -386,6 +386,6 @@ footer .conteiner {
     color: var(--color-secondary-text)
 }
 
-address :not(:last-child){
+.address :not(:last-child){
     margin-bottom: 9px;
 }
